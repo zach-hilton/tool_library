@@ -7,7 +7,12 @@
     color:white;
 }
 body {
+    width:1260px;
+    height:1060px;
     background-color: #000000;
+}
+.main {
+    margin:0 55px;
 }
 /*NAVBAR*/
 
@@ -21,12 +26,28 @@ body {
 .link_box a {
     color:white;
     text-decoration: none;
+    font-size:14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin:0 20px;
+}
+.link_box a:hover {
+    cursor:pointer;
+    background-color: white;
+    color:black;
+    height:100%;
+    width:100%;
 }
 .btn1 {
     height:110px;
     outline:none;
     border:none;
     background-color:#D67A7B ;
+}
+.btn1 a:hover {
+    cursor:pointer;
+    background-color: white;
+    color:black;
 }
 
 /*HERO SECTION*/
@@ -41,16 +62,31 @@ body {
 .hero_left {
     height:610px;
     width:50%;
-    border:1px solid;
+    display:flex;
+    flex-direction: column;
+    
 }
 .title {
     color:white;
+    font-size:80px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 550;
+    margin-top:70px;
 }
 .slogan {
     color:white;
-}
-.blockquote
+    font-size:40px;
+    font-family: 'Open Sans', sans-serif;
 
+}
+.quote {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size:12px;
+    margin-top:30px;
+    width:75%;
+}
 .btn2 {
     width:236px;
     height:70px;
@@ -58,26 +94,73 @@ body {
     border:none;
     border-radius:20px;
     background-color: #D67A7B;
+    margin-top:60px;
+}
+.btn2 a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*HERO RIGHT*/
 
 .hero_right {
     height:610px;
     width:50%;
-    border:1px solid;
+    background-color: #000000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap:16px;
+}
+.tool {
+    width:172px;
+    height:250px;
+}
 
+
+/*FOOTER*/
+
+.footer {
+    height:340px;
+    background-color: #000000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_container {
+    width:1110px;
+    height:200px;
+    display:flex;
+    flex-direction: row;
+}
+.footer_box {
+    width:33.33%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer_image {
+    width:150px;
+    height:110px;
+}
+.footer_info {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 18px;
+}
+.footer_grid-container {
+    display:grid;
+    grid-template-columns: auto auto;
+    gap:10px;
+    
+}
+.footer_grid-item {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 18px;
 }

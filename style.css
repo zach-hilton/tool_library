@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    font-family: 'Raleway', sans-serif;
     font-family: 'Open Sans', sans-serif;
     color:white;
 }
@@ -23,31 +22,49 @@ body {
     height:110px;
     background-color: #000000;
 }
-.link_box a {
-    color:white;
-    text-decoration: none;
-    font-size:14px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    margin:0 20px;
+.link_box {
+    display:flex;
+    flex-direction: row;
 }
-.link_box a:hover {
-    cursor:pointer;
-    background-color: white;
-    color:black;
-    height:100%;
-    width:100%;
+.hi_container {
+    display:flex;
+    flex-direction: row;
 }
-.btn1 {
-    height:110px;
-    outline:none;
+
+/*NAV BUTTONS*/
+
+.btn-1 {
+    width: 100px;
+    height:100px;
     border:none;
-    background-color:#D67A7B ;
+    outline:none;
+    background-color: #000000;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    transition: ease-out 0.3s;
+    font-size:14px;
 }
-.btn1 a:hover {
-    cursor:pointer;
-    background-color: white;
+.btn-1:hover {
+    box-shadow: inset 100px 0 0 0 #ffffff;
     color:black;
+    cursor:pointer;
+}
+.btn-2 {
+    width:100px;
+    height:100px;
+    border:none;
+    outline:none;
+    box-shadow:inset 0 0 0 0 white;
+    transition:ease-out 0.3s;
+    background-color: #D67A7B;
+    font-size:14px;
+    color:white;
+}
+.btn-2:hover {
+    cursor:pointer;
+    box-shadow:inset 100px 0 0 0 white;
+    transition:ease-out 0.3s;
+    color:black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*HERO SECTION*/
@@ -64,44 +81,46 @@ body {
     width:50%;
     display:flex;
     flex-direction: column;
-    
 }
 .title {
-    color:white;
-    font-size:80px;
+    font-size:100px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 550;
+    font-weight: 600;
     margin-top:70px;
 }
 .slogan {
-    color:white;
-    font-size:40px;
-    font-family: 'Open Sans', sans-serif;
-
+    font-size:30px;
 }
 .quote {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: italic;
-    font-size:12px;
+    font-size:14px;
     margin-top:30px;
     width:75%;
 }
-.btn2 {
+.btn-3 {
+    background-color:#D67A7B;
+    color: #ffffff;
+    border: none;
+    outline:none;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    transition:ease-out 0.3s;
+    border-radius: 10px;
+    cursor: pointer;
     width:236px;
     height:70px;
-    outline:none;
-    border:none;
-    border-radius:20px;
-    background-color: #D67A7B;
-    margin-top:60px;
+    font-size:18px;
+    font-weight:600;
+    margin-top:100px;
 }
-.btn2 a {
+.btn-3:hover {
+    cursor:pointer;
+    box-shadow: inset 236px  0 0 0 #ffffff;
+    color:black;
+}
+a.button-link {
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
 }
-
 
 /*HERO RIGHT*/
 
@@ -118,9 +137,15 @@ body {
     grid-template-columns: auto auto auto;
     gap:16px;
 }
-.tool {
+img.tool {
     width:172px;
     height:250px;
+}
+img.tool:hover {
+    box-shadow: inset 172px 0 0 0 white;
+    transform: scale(1.1);
+    transition:ease-out 0.3s;
+    cursor:pointer;
 }
 
 
@@ -135,16 +160,31 @@ body {
 }
 .footer_container {
     width:1110px;
-    height:200px;
+    height:330px;
     display:flex;
     flex-direction: row;
 }
-.footer_box {
+.footer_box1 {
+    width:33.33%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    margin-top:60px;
+}
+.footer_box2 {
     width:33.33%;
     height:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
+}
+.footer_box3 {
+    width:33.33%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 .footer_image {
     width:150px;
@@ -153,14 +193,24 @@ body {
 .footer_info {
     font-family: 'Philosopher', sans-serif;
     font-size: 18px;
+    margin-top:10px;
 }
 .footer_grid-container {
     display:grid;
     grid-template-columns: auto auto;
     gap:10px;
-    
 }
 .footer_grid-item {
     font-family: 'Philosopher', sans-serif;
     font-size: 18px;
+}
+.social_box {
+    display:flex;
+    flex-direction: row;
+}
+.social_icon {
+    border:1px solid white;
+    border-radius:50%;
+    margin: 15px;
+    padding:5px;
 }
